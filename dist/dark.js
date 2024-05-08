@@ -85,11 +85,11 @@ const style = document.createElement('style');
 style.innerHTML = `
 .switch-theme{
 	z-index: 999;
-	width: 40px;
-	height: 40px;
+	inline-size: 40px;
+	block-size: 40px;
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	inset-block-end: 20px;
+	inset-inline-end: 20px;
 	overflow: hidden;
 	background-color: #f3f3f3;
 	text-align: center;
@@ -103,8 +103,8 @@ style.innerHTML = `
 
 .switch-theme img{
 	position: relative;
-	top: 8px;
-	width: 60%;
+	inset-block-start: 8px;
+	inline-size: 60%;
 }
 `;
 document.head.appendChild(style);
